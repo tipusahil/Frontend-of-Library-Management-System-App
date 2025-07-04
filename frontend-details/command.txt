@@ -1,0 +1,12 @@
+1. vite + react + typescript = npm create vite@latest library-management-frontend -- --template react-ts
+
+2. react router = npm i react-router react-router-dom
+
+3. redux-toolkit + RTK-Query = npm install @reduxjs/toolkit react-redux
+
+ 4.tailwindcss install korlam, tailwindcss er latest version er viteFramwork setup instruction onujai = 5step:
+    1.terminal e = npm install tailwindcss @tailwindcss/vite
+    2. vite.config.ts file e = import tailwindcss from '@tailwindcss/vite' 
+    3. react() etar pashe    tailwindcss(),etaw bosano
+    4.index.css file e = @import "tailwindcss"; eta ekdom upore raka
+    5. notun kore npm run dev dewa.
