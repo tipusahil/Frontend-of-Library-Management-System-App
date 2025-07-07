@@ -26,10 +26,12 @@ const Footer = () => {
   </nav>
  
 </footer>
-<div className="py-6">
-    <h2 className="">Built and Designed with ❤️ by <a className="hover:underline text-blue-400" href="https://github.com/tipusahil">TipuSahil</a> — Let Code Speak</h2>
+<div className="py-6 px-3 flex flex-col justify-center items-center space-y-2">
+    <h2 className="">Built and Designed with ❤️ by <a className="hover:underline text-blue-400" href="https://github.com/tipusahil">TipuSahil</a> </h2>
+    <hr  />
+    <h2>— Let Code Speak</h2>
 
-<hr  />
+
 </div>
         </div>
     );
