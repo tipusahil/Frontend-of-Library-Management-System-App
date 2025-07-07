@@ -2,7 +2,6 @@
 import { LiquidButton } from "@/components/animate-ui/buttons/liquid";
 
 import SpotlightCard from "@/reactsBitsComponents/ComponentsBits/SpotlightCard/SpotlightCard";
-import SplashCursorProps from "@/reactsBitsComponents/backgrounds/SplaseCursor";
 import { useGetBookByIdQuery } from "@/redux/api/booksApi";
 import type { Tbook } from "@/types/bookTypes";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -42,7 +41,7 @@ const BookDetails = () => {
 
   return( 
   <div className=" w-full flex justify-center items-center  h-full  ">
-    <SplashCursorProps/>
+ 
     <SpotlightCard className="custom-spotlight-card bg-glassy" spotlightColor="rgba(10, 229, 255, 0.5)">
 
 <div className="card bg-base-100 w-96 shadow-sm bg-glassy">

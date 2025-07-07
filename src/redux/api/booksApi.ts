@@ -4,7 +4,9 @@ import  type { bookResponseType, Tbook } from '@/types/bookTypes'// ekane type i
 
 export const booksApi = createApi({
     reducerPath:"booksApi",
-    baseQuery: fetchBaseQuery({ baseUrl :  'http://localhost:5000/api'}),
+    baseQuery: fetchBaseQuery({baseUrl : process.env.REACT_APP_API_URL || 'http://localhost:5000/api'}),
+   
+        // ekane backend deploy kora live project api variable jeta .env file e raka se seta use korte hobe, nahoi vite er localhost, test er ketre shudo vite er localhost e joteshto,kintu backend ersate deploy korte er baseUrl er value hisbse .env file REACT_APP_API_URL ei variable ta use korte hobe. 
     tagTypes:['booksX'],
     endpoints:(builder) => ({
         // ---------getAllBooks by query or normal:

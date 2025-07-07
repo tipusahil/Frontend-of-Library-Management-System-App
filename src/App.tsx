@@ -5,7 +5,7 @@ import Navbar from "./assets/Components/common/Navbar";
 import { Helmet } from "react-helmet-async";
 //  import SplashCursor from './reactsBitsComponents/backgrounds/SplaseCursor'
 import Footer from "./assets/Components/common/Footer";
-
+import SplashCursorProps from "@/reactsBitsComponents/backgrounds/SplaseCursor";
 
 function App() {
 
@@ -22,11 +22,12 @@ function App() {
    {/* -------------------design part end------------- */}
    
       <div className="NavbarContainer min-h-screen flex flex-col w-[100%]">
+           <SplashCursorProps/>
         {/* ------------------------- */}
    
       <Navbar /> 
 
-      <main className=" centerBody_whichChangeByRoutes flex-grow container mx-auto p-4 border-2 border-red-500">
+      <main className=" centerBody_whichChangeByRoutes flex-grow container mx-auto p-4 ">
   <Outlet /> 
       </main>
 

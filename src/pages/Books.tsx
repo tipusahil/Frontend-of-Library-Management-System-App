@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function Books() {
   const {data,isLoading,error} = useGetBooksQuery( {}, {
 // pollingInterval:30000,
-// refetchOnFocus:true,
+refetchOnFocus:true,
 refetchOnMountOrArgChange:true,
 refetchOnReconnect:true,
   });
