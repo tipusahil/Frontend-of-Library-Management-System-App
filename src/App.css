@@ -1,42 +1,43 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.navBox{
+    backdrop-filter: blur(25px) saturate(174%);
+    -webkit-backdrop-filter: blur(25px) saturate(174%);
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navlinkActiveBox .active {
+  background: linear-gradient(to bottom right,#40ffaa, #4079ff, #40ffaa, #4079ff, #40ffaa); /* indigo-500 → red-500 → blue-500 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional fallback for Firefox */
+  background-clip: text;
+  color: transparent;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gradient-text {
+  background: linear-gradient(to bottom right, #40ffaa, #4079ff, #40ffaa, #4079ff, #40ffaa); /* indigo-500 → red-500 → blue-500 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Optional fallback for Firefox */
+  background-clip: text;
+  color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bg-glassy{
+     backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(75, 193, 246, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.bg-glassy2{
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(75, 193, 246, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(7, 204, 234, 0.416);
 }

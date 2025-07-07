@@ -1,18 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import {  Outlet} from "react-router";
+import "./App.css";
+import Navbar from "./assets/Components/common/Navbar";
+import { Helmet } from "react-helmet-async";
+//  import SplashCursor from './reactsBitsComponents/backgrounds/SplaseCursor'
+import Footer from "./assets/Components/common/Footer";
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
+ <div className=" wholeApplicationBody min-h-screen flex flex-col">
+    {/* -------------------design start end---------- */}
+   <Helmet>
+        <title> LMS | Home </title>
+    </Helmet>
+
+{/* <SplashCursor /> */}
+
+   {/* -------------------design part end------------- */}
+   
+      <div className="NavbarContainer min-h-screen flex flex-col w-[100%]">
+        {/* ------------------------- */}
+   
+      <Navbar /> 
+
+      <main className=" centerBody_whichChangeByRoutes flex-grow container mx-auto p-4 border-2 border-red-500">
+  <Outlet /> 
+      </main>
+
+      <Footer />
     
-     <h1 className="text-3xl font-bold underline ">
-    Hello world!
-  </h1>
-    </>
+        {/* ------------------------- */}
+      </div>
+    </div>
   )
 }
 
