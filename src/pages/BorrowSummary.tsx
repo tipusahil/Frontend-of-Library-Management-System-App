@@ -48,7 +48,7 @@ if (!data || !data.data || data.data.length === 0) {
 
       <div>
         <div className="overflow-x-auto">
-  <table className="table">
+  <table className="table  ">
     {/* head */}
     <thead>
       <tr>
