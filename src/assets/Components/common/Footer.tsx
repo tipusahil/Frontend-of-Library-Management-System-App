@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <div className="flex flex-col items-center justify-center">
-         <footer className="footer  sm:footer-horizontal  border border-gray-500 px-10 py-8">
+        <div className="flex flex-col items-center justify-center border border-gray-500">
+         <footer className="footer  sm:footer-horizontal   px-10 py-8">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>
